@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+  margin: 0;
+  font-family: Arial;
+
+}
+
+button{
+  padding: 0;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+button p:hover {
+  color: seagreen;
+}
+
+button p{
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.container{
+  position: absolute;
+  top: 180px;
+  background-color: white;
+}
+
+/*font settings*/
+  .green{
+  color:seagreen;
+  }
+
+  .italics{
+    font-style: italic;
+  }
+
+  .underline{
+    text-decoration: underline seagreen;
+  }

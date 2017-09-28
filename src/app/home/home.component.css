@@ -1,0 +1,76 @@
+.home_container{
+  position: absolute;
+  top: 170px;
+  width: 100%;
+
+}
+
+.slogan_wrapper{
+  height: 350px;
+}
+
+.slogan{
+  position: relative;
+  top:90px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  width: 100%;
+  margin: auto;
+  text-align: center;
+
+  color: ghostwhite;
+  font-size: 4em;
+  font-weight: 100;
+  font-family: Arial;
+  letter-spacing: 3px;
+
+  transform: scale(1,2);
+  -webkit-transform: scale(1,2);
+  -moz-transform: scale(1,2);
+  -ms-transform: scale(1,2);
+  -o-transform: scale(1,2);
+}
+
+.slogan p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  position: relative;
+}
+
+.scroll_links_container{
+  color: white;
+  width: 50%;
+  margin: auto;
+
+}
+
+.qualifications_link,.we_care_link{
+  width: 200px;
+  height: 180px;
+  display: inline-flex;
+  vertical-align: bottom;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.we_care_link{
+  float: right;
+}
+
+.svg_triangle{
+  vertical-align: bottom;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  transition: 1s;
+}
+
+.qualifications_link:hover .svg_triangle, .we_care_link:hover .svg_triangle{
+  transform: scale(1.5);
+}
+

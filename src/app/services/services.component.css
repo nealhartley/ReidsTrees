@@ -1,0 +1,38 @@
+
+
+h2{
+  font-size: 4.5em;
+  text-align: center;
+  font-weight: 200;
+}
+
+p{
+  font-size: 1.5em;
+  width: 70%;
+  margin: auto;
+}
+
+.job_containers{
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.job_containers:nth-child(even){
+  background-color: gainsboro;
+}
+
+.services_content_container{
+  display: inline-flex;
+  width: 60%;
+}
+
+
+.service_image{
+  display: inline-flex;
+  width: 30%;
+  padding-bottom: 35%;
+  vertical-align: top;
+
+  background-image: url("../../assets/temp_image.jpg");
+  background-size: 100% 100%;
+}

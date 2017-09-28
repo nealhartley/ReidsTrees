@@ -1,0 +1,97 @@
+.logo_container{
+  position: absolute;
+  width: 204px;
+  padding-bottom: 160px;
+  top: 0;
+  left: 0;
+
+}
+
+.logo{
+  background-image: url("../../assets/logo_transparent_bg.png");
+  background-size: 100% 100%;
+  width: 204px;
+  padding-bottom: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+}
+
+.angled_div_one{
+  position: relative;
+  z-index: 5;
+  width: 800px;
+  height: 200px;
+  top: -100px;
+  left: -60px;
+  background-color: white;
+
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Safari */
+  transform: rotate(-20deg);
+
+}
+
+.angled_div_two{
+  position: relative;
+  z-index: 5;
+  width: 1000px;
+  height: 200px;
+  top: -300px;
+  left: -120px;
+  background-color: rgba(255, 255 ,255, 0.5);
+
+  -ms-transform: rotate(-18deg); /* IE 9 */
+  -webkit-transform: rotate(-18deg); /* Safari */
+  transform: rotate(-18deg);
+
+}
+
+.angled_div_three{
+  position: relative;
+  z-index: 5;
+  width: 1000px;
+  height: 20px;
+  top: -335px;
+  left: -120px;
+  background-color: rgba(255, 255 ,255, 0.5);
+
+  -ms-transform: rotate(-22deg); /* IE 9 */
+  -webkit-transform: rotate(-22deg); /* Safari */
+  transform: rotate(-22deg);
+
+}
+
+
+
+
+
+
+/*links*/
+button{
+  color: white;
+  padding-left: 22%;
+}
+
+button p{
+  font-size: 1.5em;
+  font-weight: 600;
+
+}
+
+button p:hover{
+  cursor: pointer;
+}
+
+.links_container{
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  border-bottom: solid white;
+}
+
+.link_padder{
+  width: 40%;
+}
