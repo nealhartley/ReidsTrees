@@ -10,10 +10,6 @@ import { HomeComponent } from './home/home.component';
 
 import {RouterModule, Routes} from '@angular/router';
 
-import {ReactiveFormsModule} from '@angular/forms';
-import {FormControl} from '@angular/forms';
-import {HttpModule} from '@angular/http';
-
 
 let routes: Routes = [
   {path: 'testimonials', component: TestimonialsComponent},
@@ -30,9 +26,6 @@ let routes: Routes = [
     ContactUsComponent,
     TestimonialsComponent,
     HomeComponent,
-    HttpModule,
-    ReactiveFormsModule,
-    FormControl
   ],
   imports: [
     BrowserModule,

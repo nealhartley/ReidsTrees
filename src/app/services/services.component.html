@@ -1,50 +1,10 @@
 
 <div class = "container">
-  <div class = "tree_removal job_containers">
-    <h2 class = "green">Tree Removal</h2>
-    <div class = "services_content_container">
-      <p>Wellingtons gardens are notoriously tricky- we have the skills and
-        experience to remove the largest of tree’s in the smallest of spaces.</p>
-    </div>
-    <div class = "service_image"></div>
-  </div>
 
-  <div class = "pruning job_containers">
-    <h2 class = "green">Pruning</h2>
+  <div *ngFor="let Service of services" class="job_containers">
+    <h2 class = green>{{Service.title}}</h2>
     <div class = "services_content_container">
-      <p>The role of an arborist is to balance the needs of the tree with the needs of
-        the client. We do this through detailed pruning techniques and personable consultations
-        and quotes.</p>
-    </div>
-    <div class = "service_image"></div>
-  </div>
-
-  <div class = "section_clearing job_containers">
-    <h2 class = "green">Section Clearing</h2>
-    <div class = "services_content_container">
-      <p>We have the experience and skill-set to effectively clear medium to large
-        residential properties.</p>
-    </div>
-    <div class = "service_image"></div>
-  </div>
-
-  <div class = "contract_climbing job_containers">
-    <h2 class = "green">Contract Climbing</h2>
-    <div class = "services_content_container">
-      <p>We can provide professional and efficient work to larger contractors who
-        may need assistance.
-        <br><br><i>*Rates negotiable dependant on travel and equipment</i></p>
-    </div>
-    <div class = "service_image"></div>
-  </div>
-
-  <div class = "Trimming job_containers">
-    <h2 class = "green">Trimming</h2>
-    <div class = "services_content_container">
-      <p>Working in gardens from and early age, left with the trimming and topiary
-        work to earn my pocket money as a young man, I have now refined my skills as a
-        qualified and highly skilled professional. Considered an art form by the team at Reid’s
-        trees, this attention to detail resonates throughout the company.</p>
+      <p>{{Service.short_desc}}</p>
     </div>
     <div class = "service_image"></div>
   </div>
