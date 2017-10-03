@@ -30,6 +30,6 @@ export class RotatingComponent {
 
     move(): void {
       console.log('moving ');
-      this.elements.item(this.index).classList.add('selected');
+      this.elements.item(this.index).classList.add('active');
     }
 }
