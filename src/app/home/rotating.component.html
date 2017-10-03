@@ -1,0 +1,12 @@
+
+
+<div *ngFor= "let Service of services; let first = first;" [ngClass]="{active: first}" class="rotation_body">
+
+    <h2>{{Service.description}}</h2>
+    <button class = "service button">Learn More</button>
+
+</div>
+
+
+<div class = "button_left" (click)="moveLeft()">left</div>
+<div class = "button_left" (click)="moveRight()">right</div>

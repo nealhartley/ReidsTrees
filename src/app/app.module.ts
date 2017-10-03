@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { HomeComponent } from './home/home.component';
+import { RotatingComponent } from './home/rotating.component';
 
 import {RouterModule, Routes} from '@angular/router';
 
@@ -26,6 +27,7 @@ let routes: Routes = [
     ContactUsComponent,
     TestimonialsComponent,
     HomeComponent,
+    RotatingComponent,
   ],
   imports: [
     BrowserModule,
