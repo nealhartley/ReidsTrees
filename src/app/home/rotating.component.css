@@ -13,6 +13,14 @@
 
 }
 
+.moveLeft{
+  left: -100%;
+}
+
+.moveRight{
+  left: 100%;
+}
+
 .button_left{
   color: black;
   text-align: center;
