@@ -1,12 +1,20 @@
 
 
 <div *ngFor= "let Service of services; let first = first;" [ngClass]="{active: first}" class="rotation_body">
-
+  <div class = "rotating_details_container">
     <h2>{{Service.short_desc}}</h2>
     <button class = "service button">Learn More</button>
-
+  </div>
 </div>
 
 
-<div class = "button_left" (click)="moveLeft()">left</div>
-<div class = "button_left" (click)="moveRight()">right</div>
+<div class = "button_left" (click)="moveLeft()">
+  <svg class = "svg_triangle" width= "100" height = "50 "viewBox="0 0 100px 50px">
+    <polygon points = "0,25 25,0 5,25 25,50" style="fill:white;"></polygon>
+  </svg>
+</div>
+<div class = "button_right" (click)="moveRight()">
+  <svg class = "svg_triangle" width= "100" height = "50 "viewBox="0 0 100px 50px">
+    <polygon points = "50,25 25,0 45,25 25,50" style="fill:white;"></polygon>
+  </svg>
+</div>
