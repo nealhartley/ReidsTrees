@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Service } from '../service';
 import { SERVICES} from '../services';
+
 
 @Component({
   selector: 'app-rotating',
@@ -8,11 +9,16 @@ import { SERVICES} from '../services';
   styleUrls: ['./rotating.component.css']
 })
 
-export class RotatingComponent {
+export class RotatingComponent implements AfterViewInit {
     services: Service[] = SERVICES;
     index = 0;
     firstMove = true;
     elements: NodeListOf<Element> = document.getElementsByClassName('rotation_body');
+
+    ngAfterViewInit(): void {
+      this.elements[1].classList.add('moveRight');
+      this.firstMove = false;
+    }
 
     moveLeft(): void {
       this.log('starting moveleft');
