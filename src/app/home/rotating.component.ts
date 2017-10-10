@@ -15,34 +15,44 @@ export class RotatingComponent {
     elements: NodeListOf<Element> = document.getElementsByClassName('rotation_body');
 
     moveLeft(): void {
-      console.log('moving_left ' + this.index);
-      this.clearClasses(false, true, true);
-      this.elements.item(this.index).classList.add('moveLeft');
-      if (this.index === 0) {
-        this.index = this.services.length - 1;
-      } else {
-        this.index --;
-      }
+      this.index --;
+      this.indexCheck();
       this.move();
-
     }
 
     moveRight(): void {
-      console.log('moving_right ' + this.index)
-      this.clearClasses(false, true, true);;
-      this.elements.item(this.index).classList.add('moveRight');
-      if (this.index === this.services.length - 1) {
-        this.index = 0;
-      } else {
-        this.index ++;
-      }
+      this.indexCheck();
+      this.index ++;
       this.move();
     }
 
+    indexCheck(): void {
+      if (this.index > this.elements.length) { this.index = 0;
+      } else if (this.index < 0) { this.index = this.elements.length;
+      }
+    }
+
     move(): void {
-      console.log('moving ');
+      console.log(' moving ');
+      let indexLeft = 0;
+      let indexRight = 0;
+
+      if ( this.index === this.elements.length) {
+        indexRight = 0;
+      } else {indexRight = this.index + 1; }
+
+      if ( this.index === 0) {
+        indexLeft = this.elements.length;
+      } else { indexLeft = this.index - 1; }
+
+      this.clearClasses(false, true, true);
+
+      this.elements[indexLeft].classList.add('moveLeft');
+      this.elements[indexRight].classList.add('moveRight');
+      // set object at index to be active: i,e in the center
       this.clearClasses(true, false, false);
-      this.elements.item(this.index).classList.add('active');
+      this.elements[this.index].classList.add('active');
+
     }
 
     // clear classes removes certain classes depending on the booleans handed to it
