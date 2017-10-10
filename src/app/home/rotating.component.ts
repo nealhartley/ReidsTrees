@@ -39,9 +39,9 @@ export class RotatingComponent implements AfterViewInit {
     }
 
     indexCheck(): void {
-      this.log('checking index');
+      this.log('checking index : index = ' + this.index + ' elements length = ' + this.elements.length);
       if (this.index >= this.elements.length) { this.index = 0;
-      } else if (this.index < 0) { this.index = this.elements.length;
+      } else if (this.index < 0) { this.index = this.elements.length - 1;
       }
     }
 
@@ -50,7 +50,7 @@ export class RotatingComponent implements AfterViewInit {
       let indexLeft = 0;
       let indexRight = 0;
 
-      if ( this.index === this.elements.length - 1 ) {
+      if ( this.index >= this.elements.length - 1 ) {
         indexRight = 0;
         this.log('right index set at: 0');
       } else {
