@@ -15,35 +15,50 @@ export class RotatingComponent {
     elements: NodeListOf<Element> = document.getElementsByClassName('rotation_body');
 
     moveLeft(): void {
+      this.log('starting moveleft');
       this.index --;
       this.indexCheck();
+      this.log('index check complete');
       this.move();
+      this.log('movement complete');
     }
 
     moveRight(): void {
-      this.indexCheck();
+      this.log('starting moveright');
       this.index ++;
+      this.indexCheck();
+      this.log('index check complete');
       this.move();
+      this.log('movement complete');
     }
 
     indexCheck(): void {
-      if (this.index > this.elements.length) { this.index = 0;
+      this.log('checking index');
+      if (this.index === this.elements.length) { this.index = 0;
       } else if (this.index < 0) { this.index = this.elements.length;
       }
     }
 
     move(): void {
-      console.log(' moving ');
+      this.log('moving');
       let indexLeft = 0;
       let indexRight = 0;
 
-      if ( this.index === this.elements.length) {
+      if ( this.index === this.elements.length-1) {
         indexRight = 0;
-      } else {indexRight = this.index + 1; }
+        this.log('right index set at: 0');
+      } else {
+        indexRight = this.index + 1;
+        this.log('right index set at: ' + indexRight);
+      }
 
       if ( this.index === 0) {
-        indexLeft = this.elements.length;
-      } else { indexLeft = this.index - 1; }
+        indexLeft = this.elements.length - 1;
+        this.log('index left set at: ' + indexLeft);
+      } else {
+        indexLeft = this.index - 1;
+        this.log('index left set at: ' + indexLeft);
+      }
 
       this.clearClasses(false, true, true);
 
@@ -82,5 +97,8 @@ export class RotatingComponent {
       } else {
         this.firstMove = false;
       }
+    }
+    log(message: string): void {
+      console.log(message);
     }
 }

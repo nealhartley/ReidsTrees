@@ -15,14 +15,17 @@
   visibility: visible;
   transform: translate(0,0);
 }
+.active.moveLeft, .active.moveRight{
+  visibility: visible;
+}
 
 .moveLeft{
-  visibility: visible;
+
   transform: translate(-100%,0);
 }
 
 .moveRight{
-  visibility: visible;
+
   transform: translate(100%,0);
 }
 
