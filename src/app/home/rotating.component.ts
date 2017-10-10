@@ -34,7 +34,7 @@ export class RotatingComponent {
 
     indexCheck(): void {
       this.log('checking index');
-      if (this.index === this.elements.length) { this.index = 0;
+      if (this.index >= this.elements.length) { this.index = 0;
       } else if (this.index < 0) { this.index = this.elements.length;
       }
     }
@@ -44,7 +44,7 @@ export class RotatingComponent {
       let indexLeft = 0;
       let indexRight = 0;
 
-      if ( this.index === this.elements.length-1) {
+      if ( this.index === this.elements.length - 1 ) {
         indexRight = 0;
         this.log('right index set at: 0');
       } else {
@@ -74,30 +74,28 @@ export class RotatingComponent {
     // booleans are named after the classes that will be removed if that bool is true
     clearClasses(active: boolean, moveLeft: boolean, moveRight: boolean): void {
       if (active) {
-        console.log(document.getElementsByClassName('active'));
+        console.log('removing active');
         document.getElementsByClassName('active')[0].classList.remove('active');
       }
-      if (!this.firstMove) {
-        if (moveLeft) {
+
+      if (moveLeft) {
           console.log(document.getElementsByClassName('moveLeft'));
 
           try { document.getElementsByClassName('moveLeft')[0].classList.remove('moveLeft');
           } catch (e) {
             console.log(e);
           }
-        }
+      }
 
-        if (moveRight) {
+      if (moveRight) {
           console.log(document.getElementsByClassName('moveRight'));
           try { document.getElementsByClassName('moveRight')[0].classList.remove('moveRight');
           } catch (e) {
             console.log(e);
           }
-        }
-      } else {
-        this.firstMove = false;
       }
     }
+
     log(message: string): void {
       console.log(message);
     }
