@@ -1,6 +1,6 @@
 
 
-<div *ngFor= "let Service of services; let first = first; let last = last;" [ngClass]="{active: first, moveLeft: last}" class="rotation_body">
+<div *ngFor= "let Service of services; let first = first; let last = last;" [ngClass]="{active_rotator: first, moveLeft: last}" class="rotation_body">
   <div class = "rotating_details_container">
     <h2>{{Service.short_desc}}</h2>
     <button class = "service button">Learn More</button>

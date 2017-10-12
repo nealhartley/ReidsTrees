@@ -18,6 +18,7 @@ export class RotatingComponent implements AfterViewInit {
     ngAfterViewInit(): void {
       this.elements[1].classList.add('moveRight');
       this.firstMove = false;
+      this.log('------we are starting with ' + document.getElementsByClassName('active_rotator').length + ' many indices');
     }
 
     moveLeft(): void {
@@ -72,7 +73,8 @@ export class RotatingComponent implements AfterViewInit {
       this.elements[indexRight].classList.add('moveRight');
       // set object at index to be active: i,e in the center
       this.clearClasses(true, false, false);
-      this.elements[this.index].classList.add('active');
+      this.log('we are about to add index at ' + this.index);
+      this.elements[this.index].classList.add('active_rotator');
 
     }
 
@@ -80,8 +82,9 @@ export class RotatingComponent implements AfterViewInit {
     // booleans are named after the classes that will be removed if that bool is true
     clearClasses(active: boolean, moveLeft: boolean, moveRight: boolean): void {
       if (active) {
-        console.log('removing active');
-        document.getElementsByClassName('active')[0].classList.remove('active');
+        console.log('--------- removing active, there are this many indexes set: '
+          + document.getElementsByClassName('active_rotator').length);
+        document.getElementsByClassName('active_rotator')[0].classList.remove('active_rotator');
       }
 
       if (moveLeft) {
