@@ -1,11 +1,19 @@
 
 <div class = "container">
 
-  <div *ngFor="let Service of services" class="job_containers">
+  <div *ngFor="let Service of services" class="job_containers" id = "{{Service.title}}">
     <h2 class = green>{{Service.title}}</h2>
     <div class = "services_content_container">
       <p>{{Service.short_desc}}</p>
     </div>
     <div class = "service_image"></div>
   </div>
+
+  <div id = "removal" class = "scroll_to"></div>
+  <div id = "pruning" class = "scroll_to"></div>
+  <div id = "sectionclearing" class = "scroll_to"></div>
+  <div id = "contractclimbing" class = "scroll_to"></div>
+  <div id = "trimming" class = "scroll_to"></div>
 </div>
+
+

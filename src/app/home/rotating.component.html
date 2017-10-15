@@ -3,7 +3,7 @@
 <div *ngFor= "let Service of services; let first = first; let last = last;" [ngClass]="{active_rotator: first, moveLeft: last}" class="rotation_body">
   <div class = "rotating_details_container">
     <h2>{{Service.short_desc}}</h2>
-    <button class = "service button">Learn More</button>
+    <button class = "link service button" pageScroll [routerLink] ="['/services/']" href = "#{{Service.id}}" routerLinkActive="active">Learn More</button>
   </div>
 </div>
 

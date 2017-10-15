@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { RotatingComponent } from './home/rotating.component';
 
 import {RouterModule, Routes} from '@angular/router';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 
 let routes: Routes = [
@@ -32,6 +33,7 @@ let routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
+    Ng2PageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

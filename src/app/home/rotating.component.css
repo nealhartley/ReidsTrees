@@ -17,6 +17,7 @@
 }
 .active_rotator.moveLeft, .active_rotator.moveRight{
   visibility: visible;
+
 }
 
 .moveLeft{
@@ -28,6 +29,8 @@
 
   transform: translate(100%,0);
 }
+
+
 
 .button_left{
   color: black;

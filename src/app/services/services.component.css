@@ -12,9 +12,13 @@ p{
   margin: auto;
 }
 
+.container{
+
+}
+
 .job_containers{
-  padding-top: 1em;
-  padding-bottom: 3em;
+
+  height: 740px;
 }
 
 .job_containers:nth-child(even){
@@ -35,4 +39,30 @@ p{
 
   background-image: url("../../assets/temp_image.jpg");
   background-size: 100% 100%;
+}
+
+.scroll_to{
+  position: absolute;
+  height: 740px;
+  width: 100%;
+}
+
+#removal{
+  top: 0px;
+}
+
+#pruning{
+  top: calc(740px);
+}
+
+#sectionclearing{
+  top: calc(740px * 2);
+}
+
+#contractclimbing{
+  top: calc(180px + 740px * 3);
+}
+
+#trimming{
+  top: calc(180px + 740px * 4);
 }
