@@ -2,8 +2,9 @@
 <div class = "container">
 
   <div *ngFor="let Service of services" class="job_containers" id = "{{Service.title}}">
-    <h2 class = green>{{Service.title}}</h2>
+
     <div class = "services_content_container">
+      <h2 class = green>{{Service.title}}</h2>
       <p>{{Service.short_desc}}</p>
     </div>
     <div class = "service_image"></div>

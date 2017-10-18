@@ -17,8 +17,9 @@ p{
 }
 
 .job_containers{
-
+  display: inline-flex;
   height: 740px;
+  width: 100%;
 }
 
 .job_containers:nth-child(even){
@@ -26,7 +27,7 @@ p{
 }
 
 .services_content_container{
-  display: inline-flex;
+
   width: 60%;
 }
 

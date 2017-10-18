@@ -11,7 +11,7 @@ export class ContactUsComponent {
 
   powers = ['really smart', 'dumb', 'poop', 'ick'];
 
-  model = new Hero(18, 'DR DRE', this.powers[2], 'RipperRoo');
+  // model = new Hero(18, 'DR DRE', this.powers[2], 'RipperRoo');
 
   submitted = false;
 
@@ -20,6 +20,6 @@ export class ContactUsComponent {
   }
 
   // TODO remove
-  get diagnostic() { return JSON.stringify(this.model); }
+  //get diagnostic() { return JSON.stringify(this.model); }
 
 }
