@@ -18,7 +18,7 @@ button:active {
 }
 
 button p:hover {
-  color: seagreen;
+  color: white;
 }
 
 button p{
@@ -26,6 +26,7 @@ button p{
   padding-bottom: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+  text-align: left;
 }
 
 .container{

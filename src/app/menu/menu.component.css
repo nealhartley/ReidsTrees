@@ -76,8 +76,14 @@ button p{
 
 }
 
+button p:hover {
+
+  color: burlywood;
+}
+
 button p:hover{
   cursor: pointer;
+  background-color: seagreen;
 }
 
 .links_container{
@@ -85,6 +91,9 @@ button p:hover{
   top: 130px;
   width: 100%;
   border-bottom: solid white;
+  height: 26px;
+  background-color: seagreen;
+  padding-top: 2px;
 }
 
 .link_padder{
@@ -93,11 +102,17 @@ button p:hover{
 
 
 /*  drop down service links */
-.service_link_container{
+
+.services{
   position: relative;
+}
+
+.service_link_container{
+  position: absolute;
   z-index: 20;
   padding: 5px 5px 5px 5px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: seagreen;
+  width: 200px;
 }
 
 .service_link_container{
@@ -118,16 +133,17 @@ button p:hover{
 }
 
 a {
-  color: seagreen;
+  color: white;
   text-decoration: none;
   font-size: 1.5em;
   margin-top: 1em;
 }
 
 a:visited {
-  color: seagreen;
+  color: white;
 }
 
 a:hover {
-  padding-left: 5px;
+  margin-left: 8px;
+  color: burlywood;
 }
