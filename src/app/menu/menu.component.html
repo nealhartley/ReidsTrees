@@ -17,7 +17,7 @@
     <button class="link services" routerLink="/services" routerLinkActive="active"><p>SERVICES</p>
       <div class="service_link_container">
         <div *ngFor="let Service of services" >
-            <a routerLink="/services" routerLinkActive="active" href="#{{Service.id}}">{{Service.title}}</a>
+            <a routerLink="/services" pageScroll routerLinkActive="active" href="#{{Service.id}}">{{Service.title}}</a>
         </div>
       </div>
     </button>
