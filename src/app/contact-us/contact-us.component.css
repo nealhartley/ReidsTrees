@@ -5,3 +5,33 @@
 .ng-invalid:not(form)  {
   border-left: 5px solid #a94442; /* red */
 }
+
+.contact-us{
+  background-color: white;
+  text-align: center;
+  padding-top: 3em;
+
+  width: 60%;
+
+  box-shadow: 5px 5px 5px gray, -2px -2px 5px gray;
+
+
+  position: absolute;
+  top: -4em;
+  right: 20%;
+}
+
+.contact_us_container{
+  margin-top: 6em;
+  width: 100%;
+  background-color: seagreen;
+  background-image: url("../../assets/tesselate_grey1.png");
+
+  position: relative;
+  height: 200px;
+}
+
+.form-group{
+  padding-top: 3em;
+}
+
