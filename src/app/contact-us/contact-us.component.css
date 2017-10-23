@@ -8,8 +8,9 @@
 
 .contact-us{
   background-color: white;
-  text-align: center;
+  padding: 2em 2em 2em 2em;
   padding-top: 3em;
+  box-sizing: border-box;
 
   width: 60%;
 
@@ -35,3 +36,6 @@
   padding-top: 3em;
 }
 
+h1{
+  text-align: center;
+}

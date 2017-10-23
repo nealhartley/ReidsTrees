@@ -19,6 +19,7 @@ export class RotatingComponent implements AfterViewInit {
       this.elements[1].classList.add('moveRight');
       this.firstMove = false;
       this.log('------we are starting with ' + document.getElementsByClassName('active_rotator').length + ' many indices');
+      setInterval(() => {this.moveLeft()}, 4000);
     }
 
     moveLeft(): void {

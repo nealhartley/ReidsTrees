@@ -9,5 +9,4 @@ import { Service} from '../service';
 })
 export class ServicesComponent {
   services: Service[] = SERVICES;
-
 }
