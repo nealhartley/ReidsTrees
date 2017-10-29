@@ -74,3 +74,23 @@
   transform: scale(1.5);
 }
 
+.qualifications{
+
+  margin:  8em 3em 6em 3em;
+}
+
+.line{
+  width: 60%;
+  margin: auto;
+  height: 5px;
+
+  background-color: seagreen;
+  background-image: url("../../assets/tesselate_grey1.png");
+
+}
+
+.insurance{
+  margin-top: 6em;
+  margin-left: 3em;
+  margin-right: 3em;
+}

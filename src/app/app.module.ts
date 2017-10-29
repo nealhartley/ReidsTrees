@@ -12,6 +12,7 @@ import { RotatingComponent } from './home/rotating.component';
 import {RouterModule, Routes} from '@angular/router';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 let routes: Routes = [
@@ -30,6 +31,7 @@ let routes: Routes = [
     TestimonialsComponent,
     HomeComponent,
     RotatingComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
