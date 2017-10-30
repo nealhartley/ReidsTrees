@@ -38,10 +38,10 @@ export const SERVICES: Service[] = [
     title: 'Trimming',
     id: 'trimming',
     short_desc: 'Working in gardens from and early age, ' +
-  'left with the trimming and topiary work to earn my pocket money as a young man,' +
-  ' I have now refined my skills as a qualified and highly skilled professional. ' +
-  'Considered an art form by the team at Reid’s trees,' +
-  ' this attention to detail resonates throughout the company.',
+    'left with the trimming and topiary work to earn my pocket money as a young man,' +
+    ' I have now refined my skills as a qualified and highly skilled professional. ' +
+    'Considered an art form by the team at Reid’s trees,' +
+    ' this attention to detail resonates throughout the company.',
     description: '',
     image: ''
   }

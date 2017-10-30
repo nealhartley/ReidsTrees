@@ -75,22 +75,37 @@
 }
 
 .qualifications{
-
-  margin:  8em 3em 6em 3em;
-}
-
-.line{
-  width: 60%;
-  margin: auto;
-  height: 5px;
-
-  background-color: seagreen;
-  background-image: url("../../assets/tesselate_grey1.png");
-
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 30%;
+  text-align: center;
 }
 
 .insurance{
-  margin-top: 6em;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 30%;
+  text-align: center;
+  float: right;
+}
+
+.qual_container{
+  padding: 15em 0 7em 0;
+  display: inline-flex;
+  width: 100%;
+}
+
+.image{
+  width:10%;
+  margin: auto;
+  padding-bottom: 10%;
+  background-size: 100% 100%;
+}
+
+.insurance_image{
+  background-image: url("../../assets/insurance.png");
+}
+
+.qual_image{
+  background-image: url("../../assets/cert.png");
 }
