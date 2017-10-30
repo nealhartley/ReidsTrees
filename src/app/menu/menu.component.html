@@ -12,7 +12,7 @@
 
   </div>
 
-  <div class="links_container" [@SlideInOut] = "menuState">
+  <div class="links_container pc_size">
     <div class = "link_padder"></div>
     <button class="link services" routerLink="/services" routerLinkActive="active"><p>SERVICES</p>
 
@@ -26,6 +26,22 @@
     <button class="link" routerLink="/testimonials" routerLinkActive="active"><p>TESTIMONIALS</p></button>
 
   </div>
+
+  <div class="links_container phone_size" [@SlideInOut] = "menuState">
+    <div class = "link_padder"></div>
+    <button class="link services" routerLink="/services" routerLinkActive="active"><p>SERVICES</p>
+
+      <div class="service_link_container" >
+        <div *ngFor="let Service of services" >
+          <a routerLink="/services" pageScroll routerLinkActive="active" href="#{{Service.id}}">{{Service.title}}</a>
+        </div>
+      </div>
+    </button>
+    <button class="link" routerLink="/contact" routerLinkActive="active"><p>CONTACT US</p></button>
+    <button class="link" routerLink="/testimonials" routerLinkActive="active"><p>TESTIMONIALS</p></button>
+
+</div>
+
   <router-outlet></router-outlet>
 
 

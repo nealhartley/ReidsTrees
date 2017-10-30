@@ -109,3 +109,9 @@
 .qual_image{
   background-image: url("../../assets/cert.png");
 }
+
+@media (max-width: 700px) {
+
+    
+
+}

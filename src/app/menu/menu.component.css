@@ -154,6 +154,10 @@ a:hover {
 
 @media (max-width: 700px) {
 
+  .pc_size{
+    display:none;
+  }
+
   html{
     max-width: 100%;
     overflow-x: hidden;
