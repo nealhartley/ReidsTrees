@@ -14,6 +14,8 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 let routes: Routes = [
   {path: 'testimonials', component: TestimonialsComponent},
@@ -37,7 +39,8 @@ let routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     Ng2PageScrollModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
