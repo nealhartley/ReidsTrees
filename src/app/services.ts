@@ -7,7 +7,7 @@ export const SERVICES: Service[] = [
     short_desc: 'Wellingtons gardens are notoriously tricky. ' +
     'We have the skills and experience to remove the largest of tree’s in the smallest of spaces.',
     description: '',
-    image: ''
+    image: 'Website_photo_Removals_before.jpg'
   },
   {
     title: 'Pruning',
@@ -15,7 +15,7 @@ export const SERVICES: Service[] = [
     short_desc: 'The role of an arborist is to balance the needs of the tree with the needs of the' +
     ' client. We do this through detailed pruning techniques and personable consultations and quotes.',
     description: '',
-    image: ''
+    image: 'Website_photo_pruning_crown_reduction.jpg'
   },
   {
     title: 'Section Clearing',
@@ -32,7 +32,7 @@ export const SERVICES: Service[] = [
     '\n' +
     '*Rates negotiable dependant on travel and equipment',
     description: '',
-    image: ''
+    image: 'Website_photo_pruning_side_reduction.jpg'
   },
   {
     title: 'Trimming',
@@ -43,7 +43,7 @@ export const SERVICES: Service[] = [
     'Considered an art form by the team at Reid’s trees,' +
     ' this attention to detail resonates throughout the company.',
     description: '',
-    image: ''
+    image: 'Website_photo_Back_drop_pruning.jpg'
   }
 ]
 

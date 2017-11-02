@@ -11,3 +11,35 @@
   padding-bottom: 750px;
   background-color: rgba(255, 255, 255, 0.4);
 }
+
+.top_bar{
+  position: absolute;
+  top: 0.5em;
+
+  right: 20px;
+  z-index: 20;
+  display: inline-flex;
+
+}
+
+.phone{
+  display: inline-flex;
+  padding-left: 2em;
+}
+.email{
+  display: inline-flex;
+  padding-left: 2em;
+}
+
+.phone_icon{
+  background-image: url("../assets/phoneicon.png");
+  background-size: 100% 100%;
+  width: 1em;
+  height: 1em;
+}
+.email_icon{
+  background-image: url("../assets/emailicon.png");
+  background-size: 100% 100%;
+  width: 1em;
+  height: 1em;
+}
