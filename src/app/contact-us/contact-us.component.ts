@@ -13,10 +13,13 @@ export class ContactUsComponent {
 
   model = new Hero(18, 'Name...', this.powers[2], 'What is your enquiry?');
 
+  message = '';
+
   submitted = false;
 
   onSubmit() {
     this.submitted = true;
+    this.message = 'Thank you for reaching out to Reids Trees';
   }
 
   // TODO remove
