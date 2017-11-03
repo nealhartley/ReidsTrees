@@ -15,7 +15,7 @@ export const SERVICES: Service[] = [
     short_desc: 'The role of an arborist is to balance the needs of the tree with the needs of the' +
     ' client. We do this through detailed pruning techniques and personable consultations and quotes.',
     description: '',
-    image: 'Website_photo_pruning_crown_reduction.jpg'
+    image: 'Website_photo_pruning_crown_reduction_after.jpg'
   },
   {
     title: 'Section Clearing',
@@ -23,7 +23,7 @@ export const SERVICES: Service[] = [
     short_desc: 'We have the experience and skill-set to effectively clear medium' +
     ' to large residential properties.',
     description: '',
-    image: ''
+    image: 'Website_photo_pruning_side_reduction.jpg'
   },
   {
     title: 'Contract Climbing',
