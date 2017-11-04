@@ -36,10 +36,17 @@
   background-size: 100% 100%;
   width: 1em;
   height: 1em;
+  margin-right: 0.5em;
 }
 .email_icon{
   background-image: url("../assets/emailicon.png");
   background-size: 100% 100%;
   width: 1em;
   height: 1em;
+  margin-right: 0.5em;
+}
+
+.email_link{
+  text-decoration: none;
+  color: seagreen;
 }

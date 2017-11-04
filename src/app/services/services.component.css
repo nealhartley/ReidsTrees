@@ -1,44 +1,66 @@
 
 
 h2{
-  font-size: 4.5em;
-  text-align: center;
+  font-size: 1.5em;
+
   font-weight: 200;
+
+
 }
 
 p{
+  font-size: 1em;
+
+}
+
+.bigger{
   font-size: 1.5em;
+}
+
+.left_column_services{
   width: 70%;
-  margin: auto;
+  box-sizing: border-box;
+  padding-left: 10%;
+}
+
+.right_column_service{
+  width:30%;
 }
 
 .container{
 
 }
 
+.columns_container{
+  display: inline-flex;
+}
+
 .job_containers{
   display: inline-flex;
-  height: 740px;
   width: 100%;
 }
 
-.job_containers:nth-child(even){
-  background-color: gainsboro;
-}
+
 
 .services_content_container{
+  text-align: left;
+  width: 100%;
 
-  width: 60%;
 }
 
+.service_intro{
+  padding-top: 3em;
+  padding-bottom: 2.5em;
+  font-size: 1.5em;
+}
 
 .service_image{
-  display: inline-flex;
+
   width: 30%;
-  padding-bottom: 30%;
+  padding-bottom: 10%;
   vertical-align: top;
-
-
+  margin-top: 1.83em;
+  margin-bottom: 1.83em;
   background-size: 100% 100%;
 }
 

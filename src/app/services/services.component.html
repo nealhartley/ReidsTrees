@@ -1,30 +1,46 @@
 
 <div class = "container">
+  <div class = "columns_container">
+    <div class="left_column_services">
 
-  <div *ngFor="let Service of services" class="job_containers" id = "{{Service.title}}">
+      <div class = "service_intro">
+        <span class="bigger">Services</span><br><br>
+        Reid's Trees offers a variety of services all of which are delivered to the highest standard. These services include:
+      </div>
 
-    <div class = "services_content_container">
-      <h2 class = green>{{Service.title}}</h2>
-      <p>{{Service.short_desc}}</p>
+      <div *ngFor="let Service of services" class="job_containers" id = "{{Service.title}}">
+
+        <div class = "services_content_container">
+          <h2 class = green>{{Service.title}}</h2>
+          <p>{{Service.short_desc}}</p>
+        </div>
+       <!-- <div
+          class = "service_image {{Service.id}}_image"
+          [ngStyle] = "{ 'background-image' :'url(../../assets/service_photos/' + Service.image + ')'}"
+        >
+
+        </div> -->
+      </div>
     </div>
-    <div
-      class = "service_image"
-      [ngStyle] = "{ 'background-image' :'url(../../assets/service_photos/' + Service.image + ')'}"
-    >
 
+    <div class = "right_column_service">
+      <div class = "service_image"></div>
     </div>
   </div>
+
   <div class = footer>
     <app-footer>
 
     </app-footer>
   </div>
 
+<!--
   <div id = "removal" class = "scroll_to"></div>
   <div id = "pruning" class = "scroll_to"></div>
   <div id = "sectionclearing" class = "scroll_to"></div>
   <div id = "contractclimbing" class = "scroll_to"></div>
   <div id = "trimming" class = "scroll_to"></div>
+  -->
 </div>
 
 

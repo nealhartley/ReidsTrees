@@ -6,7 +6,7 @@ export const SERVICES: Service[] = [
     id: 'removal',
     short_desc: 'Wellingtons gardens are notoriously tricky. ' +
     'We have the skills and experience to remove the largest of tree’s in the smallest of spaces.',
-    description: '',
+    description: ['Reids Trees can remove trees from even the hardest of spaces', ''],
     image: 'Website_photo_Removals_before.jpg'
   },
   {
@@ -14,7 +14,7 @@ export const SERVICES: Service[] = [
     id: 'pruning',
     short_desc: 'The role of an arborist is to balance the needs of the tree with the needs of the' +
     ' client. We do this through detailed pruning techniques and personable consultations and quotes.',
-    description: '',
+    description: ['Remove trees', 'eat peanuts'],
     image: 'Website_photo_pruning_crown_reduction_after.jpg'
   },
   {
@@ -22,7 +22,7 @@ export const SERVICES: Service[] = [
     id: 'sectionclearing',
     short_desc: 'We have the experience and skill-set to effectively clear medium' +
     ' to large residential properties.',
-    description: '',
+    description: ['Remove trees', 'eat peanuts'],
     image: 'Website_photo_pruning_side_reduction.jpg'
   },
   {
@@ -31,7 +31,7 @@ export const SERVICES: Service[] = [
     short_desc: 'We can provide professional and efficient work to larger contractors who may need assistance. \n' +
     '\n' +
     '*Rates negotiable dependant on travel and equipment',
-    description: '',
+    description: ['Remove trees', 'eat peanuts'],
     image: 'Website_photo_pruning_side_reduction.jpg'
   },
   {
@@ -42,7 +42,7 @@ export const SERVICES: Service[] = [
     ' I have now refined my skills as a qualified and highly skilled professional. ' +
     'Considered an art form by the team at Reid’s trees,' +
     ' this attention to detail resonates throughout the company.',
-    description: '',
+    description: ['Remove trees', 'eat peanuts'],
     image: 'Website_photo_Back_drop_pruning.jpg'
   }
 ]
