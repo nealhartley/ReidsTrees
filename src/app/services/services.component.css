@@ -18,13 +18,10 @@ p{
 }
 
 .left_column_services{
-  width: 70%;
-  box-sizing: border-box;
-  padding-left: 10%;
+  width: 100%;
 }
 
 .right_column_service{
-  width:30%;
 }
 
 .container{
@@ -52,17 +49,11 @@ p{
   padding-top: 3em;
   padding-bottom: 2.5em;
   font-size: 1.5em;
+  margin-left: 6em;
+  margin-right: 6em;
 }
 
-.service_image{
 
-  width: 30%;
-  padding-bottom: 10%;
-  vertical-align: top;
-  margin-top: 1.83em;
-  margin-bottom: 1.83em;
-  background-size: 100% 100%;
-}
 
 .scroll_to{
   position: absolute;
@@ -88,4 +79,21 @@ p{
 
 #trimming{
   top: calc(180px + 740px * 4);
+}
+
+.jobs_and_image{
+  background-image: url("../../assets/service_photos/Website_photo_Back_drop_pruning.jpg");
+  background-size: cover;
+  width: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.all_jobs_container{
+  width: 70%;
+  margin-left: 7em;
+  padding-left: 1.5em;
+  padding-right: 2em;
+
+  background-color: white;
 }
