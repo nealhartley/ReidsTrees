@@ -65,27 +65,27 @@
 .we_care_pic {
   background-image: url("../../assets/lovetrees.png");
   background-size: 100% 100%;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 .qual_insure_pic {
   background-image: url("../../assets/insurance.png");
   background-size: 100% 100%;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 .svg_triangle{
   vertical-align: bottom;
   position: absolute;
-  left: 50px;
+  left: 70px;
   bottom: 0;
   transition: 1s;
 }
 
 .qualifications_link:hover, .we_care_link:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .qualifications{
