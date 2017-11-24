@@ -62,6 +62,20 @@
   float: right;
 }
 
+.we_care_pic {
+  background-image: url("../../assets/lovetrees.png");
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.qual_insure_pic {
+  background-image: url("../../assets/insurance.png");
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+}
+
 .svg_triangle{
   vertical-align: bottom;
   position: absolute;
@@ -70,7 +84,7 @@
   transition: 1s;
 }
 
-.qualifications_link:hover .svg_triangle, .we_care_link:hover .svg_triangle{
+.qualifications_link:hover, .we_care_link:hover{
   transform: scale(1.5);
 }
 
