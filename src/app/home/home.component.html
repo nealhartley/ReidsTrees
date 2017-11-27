@@ -7,7 +7,7 @@
 
 
   <div class = scroll_links_container>
-    <div class = "qualifications_link" pageScroll href = ".qualifications">
+    <div class = "qualifications_link" (click)="toggleMenu()">
       <a>
         <h3>Qualified and Insured</h3>
         <div class = "qual_insure_pic svg_triangle">
@@ -15,7 +15,7 @@
         </div>
       </a>
     </div>
-    <div class = "we_care_link" pageScroll href = ".qualifications">
+    <div class = "we_care_link" (click)="toggleMenu()">
       <a>
         <h3>We Care About Caring for your Trees</h3>
         <div class = "we_care_pic svg_triangle">
@@ -27,7 +27,7 @@
 
 
 
-  <div class = "qual_container">
+  <div class = "qual_container" [@SlideInOut] = "menuState" (click)="toggleMenu()">
     <div class = "qualifications">
 
       <div class ="qual_image image"></div>

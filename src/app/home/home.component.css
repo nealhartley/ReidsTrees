@@ -1,8 +1,13 @@
+html {
+  background-color: seagreen;
+  background-image: url("../../assets/emailicon.png");
+  background-size: 100% 100%;
+}
+
 .home_container{
   position: absolute;
   top: 170px;
   width: 100%;
-
 }
 
 .slogan_wrapper{
@@ -104,9 +109,15 @@
 }
 
 .qual_container{
-  padding: 15em 0 7em 0;
+  padding: 5em 0 7em 0;
   display: inline-flex;
-  width: 100%;
+  width: 80%;
+  position: fixed;
+  top: 100px;
+  left: 10%;
+  background-color: seagreen;
+  color: white;
+  font-size: 1.3em;
 }
 
 .image{
@@ -117,11 +128,11 @@
 }
 
 .insurance_image{
-  background-image: url("../../assets/insurance.png");
+  background-image: url("../../assets/insurance_white.png");
 }
 
 .qual_image{
-  background-image: url("../../assets/cert.png");
+  background-image: url("../../assets/cert_white.png");
 }
 
 .slogan_wrapper{
@@ -129,7 +140,4 @@
 }
 
 @media (max-width: 700px) {
-
-
-
 }
