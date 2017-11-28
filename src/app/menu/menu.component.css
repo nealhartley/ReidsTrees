@@ -154,6 +154,17 @@ a:hover {
 
 @media (max-width: 700px) {
 
+  .logo{
+    margin-top: 2em;
+    width: 204px;
+    padding-bottom: 160px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: 10;
+
+  }
+
   .pc_size{
     display:none;
   }
@@ -198,4 +209,6 @@ a:hover {
     background-size: 100% 100%;
     z-index: 30;
   }
+
+
 }

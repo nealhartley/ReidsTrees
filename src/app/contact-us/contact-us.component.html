@@ -1,6 +1,6 @@
 <div class = "contact_us_container">
   <div class="contact-us">
-    <h1>Contact Us...</h1>
+    <h1>Fill Out the form to Contact the Team at Reids Trees</h1>
     <form #contactForm = "ngForm" class = "form">
 
       <div class = "form-group">
@@ -8,6 +8,20 @@
         <input type = "text" class = "form-control" id="name"
                required
                [(ngModel)]="model.name" name = "name"
+               #spy
+        >
+        <br>
+        <label for = "phone">Phone</label><br>
+        <input type = "text" class = "form-control" id="phone"
+               required
+               [(ngModel)]="model.phone" name = "phone"
+               #spy
+        >
+        <br>
+        <label for = "email">Email</label><br>
+        <input type = "text" class = "form-control" id="email"
+               required
+               [(ngModel)]="model.email" name = "email"
                #spy
         >
 

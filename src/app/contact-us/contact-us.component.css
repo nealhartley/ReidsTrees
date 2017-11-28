@@ -23,7 +23,7 @@
 }
 
 .contact_us_container{
-  margin-top: 6em;
+  margin-top: -6em;
   width: 100%;
   background-color: seagreen;
   background-image: url("../../assets/tesselate_grey1.png");

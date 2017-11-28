@@ -51,3 +51,20 @@
   color: seagreen;
 }
 
+@media (max-width: 700px) {
+  .top_bar{
+    left: 0;
+    display: block;
+  }
+  .message{
+    display: none;
+  }
+
+  .phone {
+    padding-left: 0.5em;
+  }
+
+  .email{
+    padding-left: 0.5em;
+  }
+}
