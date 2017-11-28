@@ -4,6 +4,11 @@ html, body{
   font-family: Arial;
   max-width: 100%;
   overflow-x: hidden;
+  font-family: 'Lora', serif;
+}
+
+a, p{
+  font-family: 'Lora', serif;
 }
 
 button{

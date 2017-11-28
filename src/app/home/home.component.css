@@ -118,12 +118,13 @@ html {
   background-color: seagreen;
   color: white;
   font-size: 1.3em;
+  border-radius: 25px;
 }
 
 .image{
-  width:10%;
+  width:20%;
   margin: auto;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
   background-size: 100% 100%;
 }
 
