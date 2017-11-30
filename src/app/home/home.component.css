@@ -141,4 +141,8 @@ html {
 }
 
 @media (max-width: 700px) {
+  .slogan_wrapper{
+    height: 340px;
+  }
 }
+

@@ -29,7 +29,7 @@
   background-image: url("../../assets/tesselate_grey1.png");
 
   position: relative;
-  height: 200px;
+  height: 450px;
 }
 
 .form-group{
@@ -51,10 +51,61 @@ h1{
   margin: auto;
 }
 
-.button{
+.btn{
   cursor: pointer;
-  border: gray 2px;
+  border: black 2px;
   border-radius: 1px;
   margin-top: 1em;
   padding: 5px 5px 5px 5px;
+  font-size: 1.5em;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 5px;
+}
+
+.phone_icon{
+  background-image: url("../../assets/phoneicon_white.png");
+  background-size: 100% 100%;
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+
+}
+.email_icon{
+  background-image: url("../../assets/emailicon_white.png");
+  background-size: 100% 100%;
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.white{
+  color: white;
+  font-size: 2em;
+}
+
+.floating{
+  position: absolute;
+  top: -370px;
+}
+
+.phone{
+  left: 25%;
+}
+.email{
+  right: 25%;
+}
+
+.center{
+  margin: auto;
+}
+
+.email_link{
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+.footer{
+  background-image: url("../../assets/Website_photo_Home page.jpg");
+  background-size: 100% 250%;
+  background-position-y: -450px;
 }

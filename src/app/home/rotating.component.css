@@ -75,3 +75,22 @@
   box-shadow: gray;
   color: seagreen;
 }
+
+@media (max-width: 700px) {
+  .rotation_body{
+    height: 500px;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .button_right{
+    right: -12%;
+  }
+
+  .rotating_details_container{
+    padding-top: 1.5em;
+    width: 70%;
+  }
+}
