@@ -4,13 +4,18 @@
     <div class="left_column_services">
 
       <div class = "service_intro">
-        <span class="bigger">Services</span><br><br>
+
         Reid's Trees offers a variety of services all of which are delivered to the highest standard. Feel free to contact Reid at any time to inquire further. These services include:
       </div>
       <div class = "jobs_and_image">
         <div class = "all_jobs_container">
           <div *ngFor="let Service of services" class="job_containers" id = "{{Service.title}}">
+            <div
+              class = "service_image {{Service.id}}_image"
+              [ngStyle] = "{ 'background-image' :'url(../../assets/service_photos/' + Service.image + ')'}"
+            >
 
+            </div>
             <div class = "services_content_container">
               <h2 class = green>{{Service.title}}</h2>
               <p>{{Service.short_desc}}</p>
