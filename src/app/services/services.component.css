@@ -103,7 +103,7 @@ p{
   width: 80%;
   margin: auto;
   padding-top: 5em;
-  padding-bottom: 5em;
+
 }
 
 .all_jobs_container{
@@ -120,9 +120,59 @@ p{
   margin: auto;
   padding-bottom: 100%;
   background-size: cover;
-
+  background-color: white;
   border-radius: 50%;
-
+  border: solid seagreen 2px;
   /*controls the verticality of the image circle*/
   margin-top: -50%;
+}
+
+.contact_methods{
+  display: inline-flex;
+
+  width: 60%;
+  margin-left: 17.5%;
+}
+
+.phone_icon{
+  background-image: url("../../assets/phoneicon_seagreen.png");
+  background-size: 100% 100%;
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+
+}
+.email_icon{
+  background-image: url("../../assets/emailicon_seagreen.png");
+  background-size: 100% 100%;
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.white{
+  color: seagreen;
+  font-size: 2em;
+}
+
+
+.phone{
+  margin: auto;
+}
+.email{
+  margin: auto;
+}
+
+.center{
+  margin: auto;
+}
+
+.email_link{
+  text-decoration: none;
+  color:seagreen;
+}
+
+.contact_info_header{
+  text-align: center;
+  color: seagreen;
 }
