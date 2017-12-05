@@ -7,6 +7,12 @@ html, body{
   font-family: 'Lora', serif;
 }
 
+html{
+  min-height: 100vh;
+  background-color: seagreen;
+  background-image: url("/assets/tesselate_grey1.png");
+}
+
 a, p{
   font-family: 'Lora', serif;
 }
