@@ -176,3 +176,51 @@ p{
   text-align: center;
   color: seagreen;
 }
+
+@media (max-width: 700px){
+
+  .left_column_services{
+    width:100vw;
+  }
+
+  .service_intro{
+    text-align: center;
+  }
+
+  .job_containers{
+    width:  100%;
+    margin-bottom: 10em;
+  }
+
+  .contact_info_header{
+    width: 80vw;
+    margin-left: 10vw;
+  }
+
+  .contact_methods{
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .email.floating{
+    width: 100vw;
+    display: block;
+  }
+
+  .email_link p{
+    text-align: center;
+    font-size: 0.6em;
+
+  }
+
+  .phone p{
+    font-size: 0.6em;
+    text-align: center;
+    margin: auto;
+  }
+
+  .contact_methods{
+    display: block;
+  }
+
+}
