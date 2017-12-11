@@ -50,3 +50,32 @@ h2{
   width: 100%;
   background-color: transparent;
 }
+
+@media (max-width: 700px) {
+  .testimonial{
+    padding-bottom: 2em;
+    margin-top: 50%;
+  }
+
+  .testimonial:nth-child(even) .picture{
+    float: right;
+    margin-right: 0%;
+  }
+
+  .testimonial:nth-child(odd) .picture{
+    float: left;
+    margin-left: 0%;
+  }
+
+  .picture{
+    width: 100%;
+    padding-bottom: 100%;
+    margin-top: -50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h2{
+    text-align: center;
+  }
+}

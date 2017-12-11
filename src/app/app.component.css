@@ -68,4 +68,10 @@
   .email{
     padding-left: 0.5em;
   }
+
+  .background_image_menu{
+
+    background-size: 300% 150%;
+
+  }
 }

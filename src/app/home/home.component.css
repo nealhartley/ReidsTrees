@@ -144,5 +144,32 @@ html {
   .slogan_wrapper{
     height: 340px;
   }
+
+  .qualifications_link{
+    margin: auto;
+    width: 100%;
+  }
+
+  .we_care_link{
+    margin: auto;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  .scroll_links_container{
+    width: 80%;
+  }
+
+  .qual_container{
+    display: block;
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
+
+  .qualifications,.insurance{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
