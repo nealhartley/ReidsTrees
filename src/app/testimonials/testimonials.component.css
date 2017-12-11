@@ -1,0 +1,52 @@
+.picture{
+  width:15%;
+  padding-bottom: 15%;
+  border-radius: 50%;
+
+  background-size: 120% 100%;
+}
+
+.testimonial:nth-child(even) .picture{
+  float: right;
+  margin-right: -7.5%;
+}
+
+.testimonial:nth-child(odd) .picture{
+  float: left;
+  margin-left: -7.5%;
+}
+
+.testimonial:nth-child(odd){
+  background-color: white;
+}
+
+.testimonial:nth-child(even){
+  background-color: white;
+}
+
+.testimonial{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 3em;
+}
+
+
+.text_box{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1em;
+}
+
+h1{
+  text-align: center;
+  color: seagreen;
+}
+
+h2{
+  color: seagreen;
+}
+
+.container{
+  width: 100%;
+  background-color: transparent;
+}
