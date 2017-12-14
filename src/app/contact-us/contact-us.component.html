@@ -18,21 +18,21 @@
         <label for = "name">Name</label><br>
         <input type = "text" class = "form-control" id="name"
                required
-               [(ngModel)]="model.name" name = "name"
+               [(ngModel)]="message.name" name = "name"
                #spy
         >
         <br>
         <label for = "phone">Phone</label><br>
         <input type = "text" class = "form-control" id="phone"
                required
-               [(ngModel)]="model.phone" name = "phone"
+               [(ngModel)]="message.phone" name = "phone"
                #spy
         >
         <br>
         <label for = "email">Email</label><br>
         <input type = "text" class = "form-control" id="email"
                required
-               [(ngModel)]="model.email" name = "email"
+               [(ngModel)]="message.email" name = "email"
                #spy
         >
 
@@ -41,13 +41,15 @@
       <div class = "form-group">
         <label for = "input">Enquiry Details</label><br>
         <textarea type = "text" class="form-control enquiry_details" id="input"
+                  [(ngModel)]="message.message"
+                  name = "message"
                required
                   rows="4"
                   cols="50"
         ></textarea>
       </div>
 
-      <button  type = "submit" class="btn btn-succes button" (click)="onSubmit();" >Submit</button>
+      <button  type = "submit" class="btn btn-succes button" (click)="onSubmit(message);" >Submit</button>
       <p>{{message}}</p>
       <!--<br>TODO: remove this: {{spy.className}}-->
     </form>

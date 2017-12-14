@@ -13,8 +13,10 @@ import {RouterModule, Routes} from '@angular/router';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { HttpModule } from '@angular/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MailService} from './contact-us/mail.service';
 
 
 let routes: Routes = [
@@ -40,9 +42,10 @@ let routes: Routes = [
     RouterModule.forRoot(routes),
     Ng2PageScrollModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpModule,
   ],
-  providers: [],
+  providers: [MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
