@@ -21,20 +21,21 @@ if(empty($errors))
 	$content = "<p>$message</p>";
 
 	$website = 'Angular Php Email Example';
-	$email_subject = "$website: Neue Nachricht von $from_name erhalten";
+	$email_subject = "Reids Trees Contact Form";
 
 	$email_body = '<html><body>';
 	$email_body .= "$contact $content";
 	$email_body .= '</body></html>';
 
+/*
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 	$headers .= "From: $from_email\n";
 	$headers .= "Reply-To: $from_email";
+*/
+	$delivery_status = mail('neal.w.hartley@gmail.com',$email_subject,$email_body);
 
-	mail($to_email,$email_subject,$email_body,$headers);
-
-	$response_array['status'] = 'success';
+	$response_array['status'] = 'success internal - external: ' . $delivery_status;
 	$response_array['from'] = $from_email;
 	echo json_encode($response_array);
 	echo json_encode($from_email);

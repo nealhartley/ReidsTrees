@@ -23,7 +23,7 @@ export class MailService {
   sendEmail(message: IMessage): Observable<IMessage> | any {
     return this.http.post(this.emailUrl, message)
       .map(response => {
-        console.log('Sending email was successfull', response);
+        console.log('Sending email was successfull', response.toString());
         return response;
       })
       .catch(error => {
