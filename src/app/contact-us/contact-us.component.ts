@@ -24,7 +24,7 @@ export class ContactUsComponent {
 
   onSubmit(message: IMessage) {
     this.submitted = true;
-    this.completionMessage = 'Thank you for reaching out to Reids Trees';
+    this.completionMessage = 'Thank you for reaching out to Reids Trees!';
     this.mailService.sendEmail(this.message).subscribe(res => {
      console.log('success', res);
     }, error => {

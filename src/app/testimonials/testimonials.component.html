@@ -1,9 +1,9 @@
 <div class = "container">
 
-  <h1>Read what some of the great people we have worked with have to say about us</h1>
+  <h1 style="color: seagreen">Read what some of the great people we have worked with have to say about us</h1>
 
   <div *ngFor="let testimonial of testimonials" class = "testimonial">
-    <div class = "picture"
+    <div class = "picture, {{testimonial.name}}"
          [ngStyle] = "{ 'background-image' :'url(../../assets/testimonial_photos/' + testimonial.image + ')'}"
     >
     </div>
