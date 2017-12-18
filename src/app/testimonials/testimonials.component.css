@@ -3,7 +3,7 @@
   padding-bottom: 15%;
   border-radius: 50%;
 
-  background-size: 120% 100%;
+  background-size: 100% 100%;
 }
 
 .testimonial:nth-child(even) .picture{

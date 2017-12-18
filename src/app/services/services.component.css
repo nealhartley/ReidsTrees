@@ -127,6 +127,10 @@ p{
   margin-top: -50%;
 }
 
+.service_intro{
+  color: seagreen;
+}
+
 .contact_methods{
   display: inline-flex;
 
