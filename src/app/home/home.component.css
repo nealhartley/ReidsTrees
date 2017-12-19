@@ -63,6 +63,10 @@ html {
   font-size: 1.3em;
 }
 
+.qualifications_link{
+  float: left;
+}
+
 .we_care_link{
   float: right;
 }
