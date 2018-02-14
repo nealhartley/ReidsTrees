@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MailService, IMessage } from './mail.service';
 import { Hero } from './hero';
+import { LifecycleHooks} from '@angular/compiler/src/lifecycle_reflector';
 
 @Component({
   selector: 'app-contact-us',
@@ -16,20 +17,38 @@ export class ContactUsComponent {
   completionMessage = '';
 
   message: IMessage = {};
+  confirmationMessageColor;
 
   submitted = false;
+  messageColor = 'white';
   constructor(private mailService: MailService) {
 
   }
 
+
   onSubmit(message: IMessage) {
-    this.submitted = true;
-    this.completionMessage = 'Thank you for reaching out to Reids Trees!';
-    this.mailService.sendEmail(this.message).subscribe(res => {
-     console.log('success', res);
-    }, error => {
-      console.log('error', error);
-    });
+    if (this.message.message !== undefined &&
+        this.message.email !== undefined &&
+        this.message.name !== undefined &&
+        this.message.phone !== undefined) {
+
+      console.log(this.message.message);
+      this.submitted = true;
+      this.messageColor = 'green';
+      this.completionMessage = 'Thank you for reaching out to Reids Trees!';
+      this.mailService.sendEmail(this.message).subscribe(res => {
+        console.log('success', res);
+      }, error => {
+        console.log('error', error);
+      });
+
+     } else {
+
+      this.completionMessage = 'Please fill in all your details';
+      this.messageColor = 'red';
+
+    }
+
   }
 
   // TODO remove

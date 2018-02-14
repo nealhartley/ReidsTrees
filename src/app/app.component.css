@@ -31,12 +31,32 @@
   padding-left: 2em;
 }
 
+.facebook{
+  display: inline-flex;
+  padding-left: 2em;
+}
+
+.facebook_icon{
+  background-image: url("../assets/fblogo.png");
+  background-size: 100% 100%;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+  margin-top: 0.1em;
+}
+
+.facebook_icon:hover{
+  cursor: pointer;
+}
+
 .phone_icon{
   background-image: url("../assets/phoneicon.png");
   background-size: 100% 100%;
   width: 1em;
   height: 1em;
   margin-right: 0.5em;
+  margin-top: 0.15em;
+  z-index: 100;
 }
 .email_icon{
   background-image: url("../assets/emailicon.png");
@@ -44,6 +64,7 @@
   width: 1em;
   height: 1em;
   margin-right: 0.5em;
+  margin-top: 0.25em;
 }
 
 .email_link{
