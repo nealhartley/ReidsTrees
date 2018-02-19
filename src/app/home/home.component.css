@@ -154,6 +154,10 @@ html {
     width: 100%;
   }
 
+  .qualifications_link  a{
+    width: 100%;
+  }
+
   .we_care_link{
     margin: auto;
     width: 100%;
@@ -174,6 +178,10 @@ html {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .qual_insure_pic, .we_care_pic{
+    left: calc(50% - 30px);
   }
 }
 

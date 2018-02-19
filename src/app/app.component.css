@@ -83,11 +83,20 @@
 
   .phone {
     padding-left: 0.5em;
-    width: 80%;
+    float: left;
+    width: 100%;
   }
 
   .email{
     padding-left: 0.5em;
+    float: left;
+    width: 100%;
+  }
+  .facebook{
+    padding-left: 0.5em;
+    float: left;
+    width: 100%;
+    display: none;
   }
 
   .background_image_menu{

@@ -29,7 +29,7 @@
 
   <div class="links_container phone_size" [@SlideInOut] = "menuState">
     <div class = "link_padder"></div>
-    <button class="link services" routerLink="/services" routerLinkActive="active"><p>SERVICES</p>
+    <button class="link services" routerLink="/services" routerLinkActive="active" (click)="toggleMenu()"><p>SERVICES</p>
 
       <div class="service_link_container" >
         <div *ngFor="let Service of services" >
@@ -37,8 +37,8 @@
         </div>
       </div>
     </button>
-    <button class="link" routerLink="/contact" routerLinkActive="active"><p>CONTACT US</p></button>
-    <button class="link" routerLink="/testimonials" routerLinkActive="active"><p>TESTIMONIALS</p></button>
+    <button class="link" routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()"><p>CONTACT US</p></button>
+    <button class="link" routerLink="/testimonials" routerLinkActive="active" (click)="toggleMenu()"><p>TESTIMONIALS</p></button>
 
 </div>
 
