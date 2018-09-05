@@ -36,6 +36,7 @@ export class ContactUsComponent {
       this.submitted = true;
       this.messageColor = 'green';
       this.completionMessage = 'Thank you for reaching out to Reids Trees!';
+      window.alert('your message has been sent. Reids trees will get back to you shortly.');
       this.mailService.sendEmail(this.message).subscribe(res => {
         console.log('success', res);
       }, error => {
